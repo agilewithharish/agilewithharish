@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harish Raju | Scrum • PM • TPM Coaching</title>
-  <meta name="description" content="Two-tier journey for Scrum Masters, PMs, and aspiring TPMs: Delivery Leadership Mastery (Core) + PM/TPM Interview Intensive." />
+  <title>Harish Raju | Scrum • PM • TPM • AI Coaching</title>
+  <meta name="description" content="Two-tier journey for Scrum Masters, PMs, and aspiring TPMs — now with practical AI workflows: Tier 1 (Core) + Tier 2 (Interview Intensive)." />
   <meta name="theme-color" content="#0b1220" />
+
   <style>
 :root{
   --bg:#0b1220; --panel:#0f1a33; --panel2:#0c1730; --text:#eaf0ff; --muted:#b9c5e6;
@@ -24,16 +25,14 @@ body{
 }
 a{color:inherit; text-decoration:none}
 .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+
 .nav{
   position:sticky; top:0; z-index:50;
   backdrop-filter: blur(12px);
   background: rgba(11,18,32,.55);
   border-bottom:1px solid var(--line);
 }
-.nav-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:14px 0; gap:16px;
-}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:16px;}
 .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px}
 .brand-badge{
   width:40px; height:40px; border-radius:14px;
@@ -45,6 +44,7 @@ a{color:inherit; text-decoration:none}
 .nav-links{display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:flex-end;}
 .nav-links a{font-size:14px; color:var(--muted); padding:8px 10px; border-radius:12px; border:1px solid transparent;}
 .nav-links a:hover{color:var(--text); border-color:var(--line); background:rgba(255,255,255,.04)}
+
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:10px;
   padding:12px 14px; border-radius:14px; border:1px solid var(--line);
@@ -56,6 +56,7 @@ a{color:inherit; text-decoration:none}
   box-shadow: 0 18px 42px rgba(0,212,255,.16), 0 18px 42px rgba(124,92,255,.14);
 }
 .btn-primary:hover{filter:saturate(1.05) brightness(1.02)}
+
 .pill{
   display:inline-flex; gap:10px; align-items:center;
   padding:8px 12px; border-radius:999px; border:1px solid var(--line);
@@ -66,13 +67,14 @@ a{color:inherit; text-decoration:none}
   background: linear-gradient(135deg, var(--ok), var(--brand2));
   box-shadow: 0 0 0 4px rgba(65,215,167,.12);
 }
+
 .hero{padding:54px 0 34px}
 .hero-grid{display:grid; gap:26px; grid-template-columns: 1.2fr .8fr; align-items:stretch;}
 .card{
   border:1px solid var(--line);
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
   border-radius: var(--radius2);
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 50px rgba(0,0,0,.35);
 }
 .hero-left{padding:30px}
 .kicker{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px}
@@ -92,6 +94,7 @@ h1{margin:0 0 14px; font-size:44px; line-height:1.05; letter-spacing:-.6px;}
 .stat{padding:14px; border-radius: var(--radius); border:1px solid var(--line); background: rgba(255,255,255,.03);}
 .stat b{display:block; font-size:18px}
 .stat span{color:var(--muted); font-size:12px}
+
 section{padding:36px 0}
 .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:14px; margin-bottom:18px;}
 .section-title h2{margin:0; font-size:26px; letter-spacing:-.3px}
@@ -114,6 +117,7 @@ section{padding:36px 0}
   display:grid; place-items:center;
   margin-top:2px; flex:0 0 18px;
 }
+
 .offer{
   padding:20px; border-radius: var(--radius2); border:1px solid var(--line);
   background: radial-gradient(600px 320px at 80% 0%, rgba(124,92,255,.16), transparent 55%),
@@ -126,10 +130,6 @@ section{padding:36px 0}
   border:1px solid var(--line); background: rgba(255,255,255,.03);
   padding:8px 10px; border-radius:999px; margin-bottom:10px;
 }
-.price{margin-top:12px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
-.price b{font-size:26px}
-.price span{color:var(--muted); font-size:13px}
-.offer .btn{width:100%; margin-top:14px}
 .note{color:var(--muted); font-size:12px; line-height:1.6; margin-top:10px}
 .cta{
   padding:22px; border-radius: var(--radius2); border:1px solid var(--line);
@@ -138,13 +138,28 @@ section{padding:36px 0}
 }
 .cta h3{margin:0; font-size:18px}
 .cta p{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6}
+
+textarea{
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color:var(--text);
+  border-radius: 14px;
+  padding:12px 12px;
+  outline:none;
+  width:100%;
+  min-height:160px;
+  resize:vertical;
+}
+
 footer{padding:28px 0 40px; color:var(--muted); border-top:1px solid var(--line); margin-top:30px;}
 .foot{display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
 .small{font-size:12px}
+
 .floating{
   position:fixed; right:18px; bottom:18px; z-index:60;
   display:flex; flex-direction:column; gap:10px;
 }
+
 @media (max-width: 920px){
   .hero-grid{grid-template-columns: 1fr}
   h1{font-size:36px}
@@ -157,435 +172,552 @@ footer{padding:28px 0 40px; color:var(--muted); border-top:1px solid var(--line)
   .stats{grid-template-columns: 1fr}
   .nav-links{display:none}
 }
+  
+/* Guided journey navigation */
+.journeybar-wrap{
+  position:sticky;
+  top:64px; /* sits below main nav */
+  z-index:49;
+  background: rgba(11,18,32,.45);
+  backdrop-filter: blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.journeybar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:10px 0;
+}
+.journeybar .label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--muted);
+  font-size:13px;
+  white-space:nowrap;
+}
+.journeysteps{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-end;
+  align-items:center;
+}
+.journeysteps a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1;
+}
+.journeysteps a:hover{
+  color:var(--text);
+  background: rgba(255,255,255,.06);
+}
+.journeysteps a.active{
+  color:#041023;
+  border:none;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  box-shadow: 0 14px 32px rgba(0,212,255,.10), 0 14px 32px rgba(124,92,255,.10);
+}
+.journeysteps .sep{
+  width:10px; height:1px;
+  background: rgba(255,255,255,.18);
+  border-radius:99px;
+  margin:0 2px;
+}
+@media (max-width: 520px){
+  .journeybar-wrap{top:58px}
+  .journeybar{padding:8px 0}
+  .journeybar .label{display:none}
+}
+
 </style>
 </head>
+
 <body>
-
-<div class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="brand-badge">HR</div>
-        <div>
-          <div style="font-size:14px; color:var(--muted); font-weight:700;">Harish Raju</div>
-          <div style="font-size:12px; color:rgba(185,197,230,.8);">Scrum • Program Mgmt • Technical Program Leadership</div>
+  <div class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="brand-badge">HR</div>
+          <div>
+            <div style="font-size:14px; color:var(--muted); font-weight:700;">Harish Raju</div>
+            <div style="font-size:12px; color:rgba(185,197,230,.8);">Scrum • Program Mgmt • TPM • AI Enablement</div>
+          </div>
         </div>
-      </div>
 
-      <div class="nav-links">
-        <a href="#journey">Your Journey</a>
-        <a href="#tier1">Tier 1 (Core)</a>
-        <a href="#tier2">Tier 2 (Interview)</a>
-        <a href="#proof">Testimonials</a>
-        <a href="#samples">Free Samples</a>
-      </div>
+        <div class="nav-links">
+          <a href="#journey">Your Journey</a>
+          <a href="#ai">AI</a>
+          <a href="#ai-coaching">AI Coaching</a>
+          <a href="#aidemo">AI Demo</a>
+          <a href="#proof">Testimonials</a>
+          <a href="#samples">Free Samples</a>
+        </div>
 
-      <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book on Topmate</a>
+        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book on Topmate</a>
+      </div>
     </div>
   </div>
-</div>
-
-<header class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="card hero-left">
-        <div class="kicker">
-          <span class="pill"><span class="dot"></span> Hyderabad (IST) • Working Globally</span>
-          <span class="pill">Scrum Masters • PMs • Aspiring TPMs</span>
-          <span class="pill">#AgileWithHarish</span>
+  <!-- Guided journey navigation -->
+  <div class="journeybar-wrap">
+    <div class="container">
+      <div class="journeybar">
+        <div class="label">
+          <span class="pill" style="padding:6px 10px;"><span class="dot" style="width:7px;height:7px;"></span> Guided Journey</span>
+          <span>Start → Learn → Proof → Book</span>
         </div>
 
-        <h1>Become a delivery leader — and transition into <span style="background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent;">PM / TPM</span> with confidence.</h1>
-
-        <p class="sub">
-          A simple two-tier journey designed for working professionals:
-          <b>Tier 1</b> builds predictable delivery + stakeholder influence.
-          <b>Tier 2</b> accelerates PM/TPM outcomes with portfolio + interview assets.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#journey">Choose Your Tier</a>
-          <a class="btn" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book a Session</a>
-          <a class="btn" href="#samples">Download Samples</a>
-        </div>
-
-        <p class="micro">
-          Verified bookings & reviews via Topmate. No fluff — practical systems you can use immediately at work.
-        </p>
+        <nav class="journeysteps" aria-label="Guided navigation">
+          <a href="#start" data-step="start">Start</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="#journey" data-step="journey">Tiers</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="#ai" data-step="ai">AI</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="#ai-coaching" data-step="ai-coaching">Coaching</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="#proof" data-step="proof">Proof</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="#samples" data-step="samples">Samples</a>
+        </nav>
       </div>
-
-      <aside class="card hero-right">
-        <div class="mini">
-          <h3>What you’ll gain</h3>
-          <p>Predictable delivery, executive-ready communication, and a role transition plan that feels realistic and actionable.</p>
-        </div>
-
-        <div class="stats">
-          <div class="stat"><b>Scrum</b><span>Outcome-driven Agile</span></div>
-          <div class="stat"><b>PM</b><span>Governance & alignment</span></div>
-          <div class="stat"><b>TPM</b><span>Tech + business lens</span></div>
-        </div>
-
-        <div class="mini">
-          <h3>Quick contact</h3>
-          <p>Email: <b>hello@agilewithharish.com</b><br/>Phone: <b>+91-7083273689</b></p>
-          <p style="margin-top:10px; font-size:12px; color:#b9c5e6;">✔ Verified sessions & testimonials via Topmate</p>
-        </div>
-
-        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Now</a>
-      </aside>
     </div>
   </div>
-</header>
-<section id="ai">
-  <!-- AI COACHING SECTION -->
-<section id="ai-coaching">
-  <div class="container">
 
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="card hero-left">
+          <div class="kicker">
+            <span class="pill"><span class="dot"></span> Hyderabad (IST) • Working Globally</span>
+            <span class="pill">Scrum Masters • PMs • Aspiring TPMs</span>
+            <span class="pill">#AgileWithHarish</span>
+          </div>
+
+          <h1>Become a delivery leader — and transition into <span style="background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent;">PM / TPM</span> with confidence (with practical <span style="background:linear-gradient(135deg,var(--ok),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent;">AI workflows</span>).</h1>
+
+          <p class="sub">
+            A simple two-tier journey designed for working professionals:
+            <b>Tier 1</b> builds predictable delivery + stakeholder influence.
+            <b>Tier 2</b> accelerates PM/TPM outcomes with portfolio + interview assets.
+            <br><br>
+            Bonus: Learn AI workflows to write better updates, spot risks early, and save time — without coding.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#journey">Choose Your Tier</a>
+            <a class="btn" href="#ai">Explore AI</a>
+            <a class="btn" href="#samples">Download Samples</a>
+          </div>
+
+          <p class="micro">Verified bookings & reviews via Topmate. No fluff — practical systems you can use immediately at work.</p>
+        </div>
+
+        <aside class="card hero-right">
+          <div class="mini">
+            <h3>What you’ll gain</h3>
+            <p>Predictable delivery, executive-ready communication, and a realistic PM/TPM transition plan — powered by AI workflows.</p>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><b>Scrum</b><span>Outcome-driven Agile</span></div>
+            <div class="stat"><b>PM</b><span>Governance & alignment</span></div>
+            <div class="stat"><b>TPM</b><span>Tech + business lens</span></div>
+          </div>
+
+          <div class="mini">
+            <h3>Quick contact</h3>
+            <p>Email: <b>hello@agilewithharish.com</b><br/>Phone: <b>+91-7083273689</b></p>
+            <p style="margin-top:10px; font-size:12px; color:#b9c5e6;">✔ Verified sessions & testimonials via Topmate</p>
+          </div>
+
+          <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Now</a>
+        </aside>
+      </div>
+    </div>
+  </header>
+<!-- START HERE SELECTOR -->
+<section id="start">
+  <div class="container">
     <div class="section-title">
       <div>
-        <h2>AI Coaching for Scrum Masters & Program Managers</h2>
-        <p>
-          Learn how to use AI as a practical leadership accelerator —
-          improve delivery execution, communication, and career growth
-          without needing coding skills.
-        </p>
+        <h2>Start Here — Choose Your Path</h2>
+        <p>Select where you are today. The page will guide you to the most relevant journey.</p>
       </div>
     </div>
 
     <div class="grid-3">
 
-      <!-- Card 1 -->
-      <div class="tile">
-        <h3>AI for Agile Execution</h3>
-        <ul class="list">
-          <li><span class="check">✓</span> Sprint planning prompts</li>
-          <li><span class="check">✓</span> Retrospective insight generation</li>
-          <li><span class="check">✓</span> Meeting summaries in seconds</li>
-          <li><span class="check">✓</span> Backlog clarity workflows</li>
-        </ul>
+      <div class="tile" style="text-align:center;">
+        <h3>🌀 I am a Scrum Master</h3>
+        <p>Improve delivery outcomes, stakeholder influence, and leadership maturity.</p>
+        <a class="btn btn-primary" href="#tier1">Go to Delivery Leadership</a>
       </div>
 
-      <!-- Card 2 -->
-      <div class="tile">
-        <h3>AI for Program Management</h3>
-        <ul class="list">
-          <li><span class="check">✓</span> RAID log automation</li>
-          <li><span class="check">✓</span> Executive updates drafting</li>
-          <li><span class="check">✓</span> Dependency analysis</li>
-          <li><span class="check">✓</span> Decision briefing creation</li>
-        </ul>
+      <div class="tile" style="text-align:center;">
+        <h3>📊 I am a Project / Program Manager</h3>
+        <p>Strengthen governance, communication, and scalable execution systems.</p>
+        <a class="btn btn-primary" href="#tier1">Go to Program Leadership</a>
       </div>
 
-      <!-- Card 3 -->
-      <div class="tile">
-        <h3>AI for Career Growth</h3>
-        <ul class="list">
-          <li><span class="check">✓</span> STAR story generation</li>
-          <li><span class="check">✓</span> Resume improvement using AI</li>
-          <li><span class="check">✓</span> TPM interview simulations</li>
-          <li><span class="check">✓</span> Leadership narrative refinement</li>
-        </ul>
+      <div class="tile" style="text-align:center;">
+        <h3>🚀 I want to become a TPM</h3>
+        <p>Build technical thinking, portfolios, and interview-ready narratives.</p>
+        <a class="btn btn-primary" href="#tier2">Go to TPM Acceleration</a>
       </div>
 
     </div>
-
-    <!-- HOW IT WORKS -->
-    <div class="cta" style="margin-top:20px;">
-      <div>
-        <h3>How AI Coaching Works</h3>
-        <p>
-          ✔ Understand your current role challenges<br>
-          ✔ Learn practical AI workflows you can use immediately<br>
-          ✔ Apply templates + prompts to real scenarios<br>
-          ✔ Build leadership artifacts aligned with PM/TPM roles
-        </p>
-      </div>
-
-      <a class="btn btn-primary"
-         href="https://topmate.io/harish_raju/"
-         target="_blank"
-         rel="noopener">
-         Book AI Coaching Session
-      </a>
-    </div>
-
   </div>
 </section>
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>AI for Scrum Masters & Program Managers</h2>
-        <p>
-          Learn how to use AI as a practical leadership accelerator — not just a technical tool.
-        </p>
+
+
+  <section id="journey">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Your journey (2-tier model)</h2>
+          <p>Choose your starting point. Many professionals start with Tier 1, then move to Tier 2 when targeting PM/TPM interviews.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="offer" id="tier1">
+          <div class="tag">Tier 1 • Core</div>
+          <h3>Delivery Leadership Mastery (4–6 weeks)</h3>
+          <p class="sub" style="margin:0; font-size:13px;">For <b>Scrum Masters + PMs</b> who want predictable delivery, stronger stakeholder influence, and leadership-ready execution systems.</p>
+          <ul class="list">
+            <li><span class="check">✓</span> Predictability system (readiness, scope control, metrics)</li>
+            <li><span class="check">✓</span> RAID + dependency management routines</li>
+            <li><span class="check">✓</span> Stakeholder updates that build trust</li>
+            <li><span class="check">✓</span> AI-assisted artifacts (optional)</li>
+          </ul>
+          <div class="note"><b>Outcome:</b> You become a delivery leader — not just a ceremony facilitator.</div>
+          <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Tier 1 on Topmate</a>
+        </div>
+
+        <div class="offer" id="tier2">
+          <div class="tag">Tier 2 • Interview Intensive</div>
+          <h3>PM/TPM Career Acceleration (2–3 weeks)</h3>
+          <p class="sub" style="margin:0; font-size:13px;">For professionals targeting <b>PM/TPM roles</b> with a portfolio, strong narratives, and confident interview performance.</p>
+          <ul class="list">
+            <li><span class="check">✓</span> Role mapping: PM vs TPM + gap closure plan</li>
+            <li><span class="check">✓</span> 3–5 STAR stories with metrics</li>
+            <li><span class="check">✓</span> Portfolio artifacts (RAID, exec updates, launch plan)</li>
+            <li><span class="check">✓</span> Mock interviews + actionable feedback</li>
+          </ul>
+          <div class="note"><b>Outcome:</b> Clear positioning + interview-ready proof of impact.</div>
+          <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Tier 2 on Topmate</a>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:14px;">
+        <div>
+          <h3>Not sure which tier fits you?</h3>
+          <p>Book a short call on Topmate — I’ll recommend Tier 1 or Tier 2 based on your current role and goals.</p>
+        </div>
+        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book a Quick Call</a>
       </div>
     </div>
+  </section>
 
-    <div class="grid-3">
-
-      <div class="tile">
-        <h3>AI-Assisted Agile Execution</h3>
-        <p>
-          Use AI to generate sprint plans, retrospective insights, risk summaries,
-          and stakeholder updates faster while improving clarity and consistency.
-        </p>
-        <ul class="list">
-          <li><span class="check">✓</span> AI sprint planning prompts</li>
-          <li><span class="check">✓</span> Automated meeting summaries</li>
-          <li><span class="check">✓</span> Retrospective insight generation</li>
-        </ul>
+  <section id="ai">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>AI for Scrum Masters & Program Managers</h2>
+          <p>Use AI as a practical leadership accelerator — improve clarity, speed, and decision-making. No coding required.</p>
+        </div>
       </div>
 
-      <div class="tile">
-        <h3>AI for Program Management</h3>
-        <p>
-          Learn how AI helps program managers analyze dependencies, risks,
-          and executive communication more effectively.
-        </p>
-        <ul class="list">
-          <li><span class="check">✓</span> RAID log automation</li>
-          <li><span class="check">✓</span> Executive update drafting</li>
-          <li><span class="check">✓</span> Decision briefing creation</li>
-        </ul>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>AI-Assisted Agile Execution</h3>
+          <p>Create sprint plans, summarize meetings, and turn retro insights into actions faster.</p>
+          <ul class="list">
+            <li><span class="check">✓</span> Sprint planning prompts</li>
+            <li><span class="check">✓</span> Meeting summary workflows</li>
+            <li><span class="check">✓</span> Retro insights → action items</li>
+          </ul>
+        </div>
+
+        <div class="tile">
+          <h3>AI for Program Management</h3>
+          <p>Improve risk visibility and executive communication using structured AI workflows.</p>
+          <ul class="list">
+            <li><span class="check">✓</span> RAID summarization prompts</li>
+            <li><span class="check">✓</span> Exec update drafting</li>
+            <li><span class="check">✓</span> Decision brief creation</li>
+          </ul>
+        </div>
+
+        <div class="tile">
+          <h3>AI-Powered Career Growth</h3>
+          <p>Build STAR stories, refine metrics, and practice PM/TPM interviews with AI.</p>
+          <ul class="list">
+            <li><span class="check">✓</span> STAR story builder</li>
+            <li><span class="check">✓</span> Resume/LinkedIn positioning</li>
+            <li><span class="check">✓</span> Mock interview prompts</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="tile">
-        <h3>AI-Powered Career Growth</h3>
-        <p>
-          Use AI to prepare interview stories, leadership narratives,
-          and portfolio artifacts aligned with PM and TPM roles.
-        </p>
-        <ul class="list">
-          <li><span class="check">✓</span> STAR story generation</li>
-          <li><span class="check">✓</span> Resume optimization</li>
-          <li><span class="check">✓</span> Mock interview simulations</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="cta" style="margin-top:16px;">
-      <div>
-        <h3>Learn practical AI workflows used by modern delivery leaders</h3>
-        <p>
-          No coding required — only real-world workflows that save time
-          and improve leadership impact.
-        </p>
-      </div>
-
-      <a class="btn btn-primary" href="#ai-coaching">Explore AI Coaching</a>
-    </div>
-<section id="aidemo">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>Try an AI Workflow (Live Example)</h2>
-        <p>
-          This is how delivery leaders use AI to save time and improve clarity.
-        </p>
+      <div class="cta" style="margin-top:16px;">
+        <div>
+          <h3>Want the AI prompt pack + real implementation?</h3>
+          <p>Click below to see how AI coaching works and what you’ll get.</p>
+        </div>
+        <a class="btn btn-primary" href="#ai-coaching">Explore AI Coaching</a>
       </div>
     </div>
+  </section>
 
-    <div class="grid-2">
+  <section id="ai-coaching">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>AI Coaching (how I help you)</h2>
+          <p>We tailor AI workflows to your real projects so you save time and communicate like a delivery leader.</p>
+        </div>
+      </div>
 
-      <div class="tile">
-        <h3>Example: Stakeholder Update Generator</h3>
-        <p>
-          Copy the prompt below and paste into ChatGPT using your real project data.
-        </p>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>Agile execution workflows</h3>
+          <ul class="list">
+            <li><span class="check">✓</span> Sprint plan assistant</li>
+            <li><span class="check">✓</span> Backlog clarity prompts</li>
+            <li><span class="check">✓</span> Retro insight generator</li>
+            <li><span class="check">✓</span> Action tracking summaries</li>
+          </ul>
+        </div>
 
-<textarea readonly style="width:100%;height:160px;">
-Act as a Program Manager.
+        <div class="tile">
+          <h3>Program management workflows</h3>
+          <ul class="list">
+            <li><span class="check">✓</span> RAID → exec summary</li>
+            <li><span class="check">✓</span> Stakeholder update generator</li>
+            <li><span class="check">✓</span> Dependency/risk analysis</li>
+            <li><span class="check">✓</span> Decision briefs</li>
+          </ul>
+        </div>
 
-Summarize the following project updates into an executive
-weekly update using:
+        <div class="tile">
+          <h3>Career workflows</h3>
+          <ul class="list">
+            <li><span class="check">✓</span> STAR story polishing</li>
+            <li><span class="check">✓</span> Metrics framing</li>
+            <li><span class="check">✓</span> Interview simulations</li>
+            <li><span class="check">✓</span> Leadership narratives</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:20px;">
+        <div>
+          <h3>How it works</h3>
+          <p>✔ Diagnose your delivery pain points<br>
+             ✔ Choose 2 workflows to implement first<br>
+             ✔ Build templates + prompts for your role<br>
+             ✔ Practice using your real project updates</p>
+        </div>
+        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book AI Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="aidemo">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>AI Demo (try this today)</h2>
+          <p>Copy the prompt below into ChatGPT and paste your real project notes. This is a real workflow you’ll learn in coaching.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="tile">
+          <h3>Stakeholder Update Generator</h3>
+          <p>Prompt:</p>
+          <textarea readonly>Act as a Program Manager.
+
+Summarize the following project updates into an executive weekly update using:
 • Progress
 • Risks
 • Decisions Needed
 • Next Week Focus
 
 Tone: concise, leadership-ready.
-</textarea>
 
-        <div class="note">
-          Replace project details with your own information.
+Project updates:
+[PASTE HERE]</textarea>
+          <div class="note">Tip: Replace the [PASTE HERE] block with your real notes or RAID log items.</div>
+        </div>
+
+        <div class="tile">
+          <h3>What you’ll learn next</h3>
+          <ul class="list">
+            <li><span class="check">✓</span> Prompts for Scrum ceremonies</li>
+            <li><span class="check">✓</span> Exec updates in 60 seconds</li>
+            <li><span class="check">✓</span> RAID summarization</li>
+            <li><span class="check">✓</span> Interview story refinement</li>
+          </ul>
+          <a class="btn btn-primary" href="#ai-coaching">See AI Coaching</a>
+          <div style="height:10px"></div>
+          <a class="btn" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book on Topmate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Testimonials (verified)</h2>
+          <p>See real reviews on Topmate.</p>
+        </div>
+        <a class="btn" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">View on Topmate →</a>
+      </div>
+
+      <div class="grid-2">
+        <div class="tile">
+          <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+            <div style="font-weight:800;">★★★★★</div>
+            <div style="color:var(--muted); font-size:12px;">Verified</div>
+          </div>
+          <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Thank Harish for the inputs and sharing the network. It is always nice talking to you.”</p>
+          <div style="margin-top:10px; font-weight:700; font-size:13px;">— Akshay Danak</div>
+        </div>
+
+        <div class="tile">
+          <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+            <div style="font-weight:800;">★★★★★</div>
+            <div style="color:var(--muted); font-size:12px;">Verified</div>
+          </div>
+          <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Conversation with Harish was very insightful… his approach of keeping things simple stood out.”</p>
+          <div style="margin-top:10px; font-weight:700; font-size:13px;">— P ARABIND</div>
         </div>
       </div>
 
-      <div class="tile">
-        <h3>What You Learn in Coaching</h3>
-        <ul class="list">
-          <li><span class="check">✓</span> AI prompts for Scrum ceremonies</li>
-          <li><span class="check">✓</span> Executive communication automation</li>
-          <li><span class="check">✓</span> RAID log summarization</li>
-          <li><span class="check">✓</span> Interview story refinement</li>
-        </ul>
-
-        <a class="btn btn-primary"
-           href="https://topmate.io/harish_raju/"
-           target="_blank">
-           Learn AI Workflows
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-  </div>
-</section>
-  
-<section id="journey">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>Your journey (2-tier model)</h2>
-        <p>Choose your starting point. Many professionals start with Tier 1, then move to Tier 2 when targeting PM/TPM interviews.</p>
-      </div>
-    </div>
-
-    <div class="grid-2">
-      <div class="offer" id="tier1">
-        <div class="tag">Tier 1 • Core</div>
-        <h3>Delivery Leadership Mastery (4–6 weeks)</h3>
-        <p class="sub" style="margin:0; font-size:13px;">For <b>Scrum Masters + PMs</b> who want predictable delivery, stronger stakeholder influence, and leadership-ready execution systems.</p>
-        <ul class="list">
-          <li><span class="check">✓</span> Predictability system (readiness, scope control, metrics)</li>
-          <li><span class="check">✓</span> RAID + dependency management routines</li>
-          <li><span class="check">✓</span> Stakeholder updates that build trust</li>
-          <li><span class="check">✓</span> Coaching on your real project (not theory)</li>
-        </ul>
-        <div class="note"><b>Outcome:</b> You become a delivery leader — not just a ceremony facilitator.</div>
-        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Tier 1 on Topmate</a>
-      </div>
-
-      <div class="offer" id="tier2">
-        <div class="tag">Tier 2 • Interview Intensive</div>
-        <h3>PM/TPM Career Acceleration (2–3 weeks)</h3>
-        <p class="sub" style="margin:0; font-size:13px;">For professionals targeting <b>PM/TPM roles</b> with a portfolio, strong narratives, and confident interview performance.</p>
-        <ul class="list">
-          <li><span class="check">✓</span> Role mapping: PM vs TPM + gap closure plan</li>
-          <li><span class="check">✓</span> 3–5 STAR stories with metrics</li>
-          <li><span class="check">✓</span> Portfolio artifacts (RAID, exec updates, launch plan)</li>
-          <li><span class="check">✓</span> Mock interviews + actionable feedback</li>
-        </ul>
-        <div class="note"><b>Outcome:</b> Clear positioning + interview-ready proof of impact.</div>
-        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Tier 2 on Topmate</a>
-      </div>
-    </div>
-
-    <div class="cta" style="margin-top:14px;">
-      <div>
-        <h3>Not sure which tier fits you?</h3>
-        <p>Book a short call on Topmate — I’ll recommend Tier 1 or Tier 2 based on your current role and goals.</p>
-      </div>
-      <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book a Quick Call</a>
-    </div>
-  </div>
-</section>
-
-<section id="proof">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>Testimonials (verified)</h2>
-        <p>See real reviews on Topmate. You can also paste 4–8 short testimonials here if you want stronger on-page trust.</p>
-      </div>
-      <a class="btn" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">View on Topmate →</a>
-    </div>
-
-    <div class="grid-2">
-      <div class="tile">
-        <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
-          <div style="font-weight:800;">★★★★★</div>
-          <div style="color:var(--muted); font-size:12px;">Verified</div>
+      <div class="cta" style="margin-top:14px;">
+        <div>
+          <h3>Book directly where reviews are hosted</h3>
+          <p>Topmate manages scheduling, payments, and review verification for transparency.</p>
         </div>
-        <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Thank Harish for the inputs and sharing the network. It is always nice talking to you.”</p>
-        <div style="margin-top:10px; font-weight:700; font-size:13px;">— Akshay Danak</div>
+        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Go to Topmate</a>
       </div>
+    </div>
+  </section>
 
-      <div class="tile">
-        <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
-          <div style="font-weight:800;">★★★★★</div>
-          <div style="color:var(--muted); font-size:12px;">Verified</div>
+  <section id="samples">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Free samples (download)</h2>
+          <p>Keep PDFs in the same folder as this HTML file when you host it (GitHub Pages root).</p>
         </div>
-        <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Conversation with Harish was very insightful… his approach of keeping things simple stood out.”</p>
-        <div style="margin-top:10px; font-weight:700; font-size:13px;">— P ARABIND</div>
       </div>
-    </div>
 
-    <div class="cta" style="margin-top:14px;">
-      <div>
-        <h3>Book directly where reviews are hosted</h3>
-        <p>Topmate manages scheduling, payments, and review verification for transparency.</p>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>RAID Log Template</h3>
+          <p>Risks, assumptions, issues, dependencies — leadership visibility in one place.</p>
+          <a class="btn btn-primary" href="Sample_RAID_Log_Template.pdf" download>Download PDF</a>
+        </div>
+        <div class="tile">
+          <h3>Weekly Stakeholder Update</h3>
+          <p>One-page update that builds trust through consistency.</p>
+          <a class="btn btn-primary" href="Sample_Stakeholder_Update_Template.pdf" download>Download PDF</a>
+        </div>
+        <div class="tile">
+          <h3>Sprint Predictability Checklist</h3>
+          <p>Checklist to reduce spillover and improve commitment reliability.</p>
+          <a class="btn btn-primary" href="Sample_Sprint_Predictability_Checklist.pdf" download>Download PDF</a>
+        </div>
       </div>
-      <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Go to Topmate</a>
+
+      <div class="cta" style="margin-top:14px;">
+        <div>
+          <h3>Want the full pack + personalized walkthrough?</h3>
+          <p>Book a session and I’ll tailor templates + AI workflows to your exact role and org context.</p>
+        </div>
+        <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book on Topmate</a>
+      </div>
     </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div class="small">
+          © <span id="year"></span> Harish Raju • Hyderabad, India • <span style="opacity:.9">#AgileWithHarish</span><br/>
+          Email: <b>hello@agilewithharish.com</b> • Phone: <b>+91-7083273689</b>
+        </div>
+        <div class="small">
+          <span class="pill">#TechnicalProgramManager</span>
+          <span class="pill">#AgileLeadership</span>
+          <span class="pill">#ScrumMaster</span>
+          <span class="pill">#ProgramManagement</span>
+          <span class="pill">#DeliveryLeadership</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating">
+    <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Session</a>
+    <a class="btn" href="#journey">Choose Tier</a>
   </div>
-</section>
 
-<section id="samples">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>Free samples (download)</h2>
-        <p>These are immediate downloads. Keep PDFs in the same folder as this HTML file when you host it.</p>
-      </div>
-    </div>
-
-    <div class="grid-3">
-      <div class="tile">
-        <h3>RAID Log Template</h3>
-        <p>Risks, assumptions, issues, dependencies — leadership visibility in one place.</p>
-        <a class="btn btn-primary" href="Sample_RAID_Log_Template.pdf" download>Download PDF</a>
-      </div>
-      <div class="tile">
-        <h3>Weekly Stakeholder Update</h3>
-        <p>One-page update that builds trust through consistency.</p>
-        <a class="btn btn-primary" href="Sample_Stakeholder_Update_Template.pdf" download>Download PDF</a>
-      </div>
-      <div class="tile">
-        <h3>Sprint Predictability Checklist</h3>
-        <p>Checklist to reduce spillover and improve commitment reliability.</p>
-        <a class="btn btn-primary" href="Sample_Sprint_Predictability_Checklist.pdf" download>Download PDF</a>
-      </div>
-    </div>
-
-    <div class="cta" style="margin-top:14px;">
-      <div>
-        <h3>Want the full pack + personalized walkthrough?</h3>
-        <p>Book a session and I’ll tailor these to your exact role and org context.</p>
-      </div>
-      <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book on Topmate</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="foot">
-      <div class="small">
-        © <span id="year"></span> Harish Raju • Hyderabad, India • <span style="opacity:.9">#AgileWithHarish</span><br/>
-        Email: <b>your.email@domain.com</b> • Phone: <b>+91-7083273689</b>
-      </div>
-      <div class="small">
-        <span class="pill">#TechnicalProgramManager</span>
-        <span class="pill">#AgileLeadership</span>
-        <span class="pill">#ScrumMaster</span>
-        <span class="pill">#ProgramManagement</span>
-        <span class="pill">#DeliveryLeadership</span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<div class="floating">
-  <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">Book Session</a>
-  <a class="btn" href="#journey">Choose Tier</a>
-</div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  // Guided journey: highlight current section in the sticky journey bar
+  (function(){
+    const links = Array.from(document.querySelectorAll('.journeysteps a[data-step]'));
+    const sections = links
+      .map(a => document.getElementById(a.getAttribute('data-step')) || document.querySelector(a.getAttribute('href')))
+      .filter(Boolean);
+
+    if(!links.length || !sections.length) return;
+
+    const setActive = (id) => {
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('data-step') === id));
+    };
+
+    // Default active
+    setActive(links[0].getAttribute('data-step'));
+
+    const observer = new IntersectionObserver((entries) => {
+      // Pick the most visible intersecting section
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a,b) => (b.intersectionRatio - a.intersectionRatio));
+
+      if(visible.length){
+        const id = visible[0].target.id;
+        setActive(id);
+      }
+    }, {
+      root: null,
+      // Trigger when section passes the top-ish of viewport (compensate sticky nav)
+      rootMargin: "-30% 0px -60% 0px",
+      threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+    });
+
+    sections.forEach(sec => observer.observe(sec));
+  })();
 </script>
 
 </body>
