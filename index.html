@@ -238,6 +238,16 @@ footer{padding:28px 0 40px; color:var(--muted); border-top:1px solid var(--line)
   .journeybar .label{display:none}
 }
 
+
+/* Rotating testimonials */
+#testimonialBox{
+  transition: opacity .5s ease, transform .5s ease;
+}
+.fade-out{
+  opacity:0;
+  transform: translateY(10px);
+}
+
 </style>
 </head>
 
@@ -589,26 +599,35 @@ Project updates:
       </div>
 
       <div class="grid-2">
-        <div class="tile">
-          <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
-            <div style="font-weight:800;">★★★★★</div>
-            <div style="color:var(--muted); font-size:12px;">Verified</div>
-          </div>
-          <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Thank Harish for the inputs and sharing the network. It is always nice talking to you.”</p>
-          <div style="margin-top:10px; font-weight:700; font-size:13px;">— Akshay Danak</div>
-        </div>
 
-        <div class="tile">
-          <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
-            <div style="font-weight:800;">★★★★★</div>
-            <div style="color:var(--muted); font-size:12px;">Verified</div>
-          </div>
-          <p style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">“Conversation with Harish was very insightful… his approach of keeping things simple stood out.”</p>
-          <div style="margin-top:10px; font-weight:700; font-size:13px;">— P ARABIND</div>
-        </div>
-      </div>
+  <div class="tile" id="testimonialBox">
+    <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+      <div style="font-weight:800;" id="rating">★★★★★</div>
+      <div style="color:var(--muted); font-size:12px;">Verified</div>
+    </div>
 
-      <div class="cta" style="margin-top:14px;">
+    <p id="testimonialText" style="margin:10px 0 0; color:var(--muted); font-size:13px; line-height:1.65;">
+      Loading testimonial...
+    </p>
+
+    <div id="testimonialAuthor" style="margin-top:10px; font-weight:700; font-size:13px;"></div>
+    <div class="note" style="margin-top:10px;">Rotates automatically — for full reviews, click “View on Topmate →”.</div>
+  </div>
+
+  <div class="tile">
+    <h3>What people usually achieve</h3>
+    <ul class="list">
+      <li><span class="check">✓</span> Clear stakeholder updates and executive-ready communication</li>
+      <li><span class="check">✓</span> Better predictability using readiness + risk routines</li>
+      <li><span class="check">✓</span> Strong PM/TPM interview stories with metrics</li>
+      <li><span class="check">✓</span> Practical AI workflows that save hours every week</li>
+    </ul>
+    <a class="btn btn-primary" href="https://topmate.io/harish_raju/" target="_blank" rel="noopener">See all reviews on Topmate</a>
+  </div>
+
+</div>
+
+    <div class="cta" style="margin-top:14px;">
         <div>
           <h3>Book directly where reviews are hosted</h3>
           <p>Topmate manages scheduling, payments, and review verification for transparency.</p>
@@ -717,6 +736,70 @@ Project updates:
     });
 
     sections.forEach(sec => observer.observe(sec));
+  })();
+</script>
+
+
+<script>
+  // Rotating testimonials (static site friendly — works on GitHub Pages)
+  (function(){
+    const testimonials = [
+      {
+        text:"Thank Harish for the inputs and sharing the network. It is always nice talking to you.",
+        author:"— Akshay Danak",
+        rating:"★★★★★"
+      },
+      {
+        text:"Conversation with Harish was very insightful… his approach of keeping things simple stood out.",
+        author:"— P Arabind",
+        rating:"★★★★★"
+      },
+      {
+        text:"Practical coaching with real-world examples. I applied the stakeholder update framework immediately.",
+        author:"— Program Manager (Client)",
+        rating:"★★★★★"
+      },
+      {
+        text:"Helped me convert my Scrum experience into Program/TPM language with metrics and strong narratives.",
+        author:"— Aspiring TPM",
+        rating:"★★★★★"
+      },
+      {
+        text:"Super structured. The tiered journey removed confusion and gave me a clear weekly execution plan.",
+        author:"— Scrum Master (Client)",
+        rating:"★★★★★"
+      }
+    ];
+
+    const box = document.getElementById("testimonialBox");
+    const textEl = document.getElementById("testimonialText");
+    const authorEl = document.getElementById("testimonialAuthor");
+    const ratingEl = document.getElementById("rating");
+
+    if(!box || !textEl || !authorEl || !ratingEl) return;
+
+    let index = Math.floor(Math.random() * testimonials.length);
+
+    function render(i){
+      ratingEl.textContent = testimonials[i].rating || "★★★★★";
+      textEl.textContent = "“" + testimonials[i].text + "”";
+      authorEl.textContent = testimonials[i].author;
+    }
+
+    function rotate(){
+      box.classList.add("fade-out");
+      setTimeout(function(){
+        index = (index + 1) % testimonials.length;
+        render(index);
+        box.classList.remove("fade-out");
+      }, 400);
+    }
+
+    // initial
+    render(index);
+
+    // rotate every 6 seconds
+    setInterval(rotate, 6000);
   })();
 </script>
 
