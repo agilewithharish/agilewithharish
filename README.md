@@ -1,5 +1,8 @@
 # 👋 Hi, I'm Harish Raju
-
+![Agile](https://img.shields.io/badge/Agile-Leadership-blue)
+![Program Management](https://img.shields.io/badge/Program-Management-purple)
+![TPM](https://img.shields.io/badge/Technical-Program_Manager-green)
+![Coaching](https://img.shields.io/badge/Career-Coaching-orange)
 ### Agile Leader • Program Management • Technical Program Manager (TPM)
 
 I help **Scrum Masters, Project Managers, and aspiring TPMs** become delivery leaders and transition into high-impact roles using practical enterprise execution systems.
